@@ -4,6 +4,7 @@ namespace Infinitypaul\LaravelPasswordHistoryValidation\Tests;
 
 use Infinitypaul\LaravelPasswordHistoryValidation\LaravelPasswordHistoryValidationServiceProvider;
 use Orchestra\Testbench\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class ExampleTest extends TestCase
 {
@@ -12,7 +13,7 @@ class ExampleTest extends TestCase
         return [LaravelPasswordHistoryValidationServiceProvider::class];
     }
 
-    /** @test */
+    #[Test]
     public function true_is_true()
     {
         $this->assertTrue(true);
